@@ -28,7 +28,7 @@ input.addEventListener("input", () => {
 
 async function getWeather(city) {
   const apiKey = "405c2d6cf90b46718ed125946252408"; 
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`;
 
   const response = await fetch(url);
   const data = await response.json();
